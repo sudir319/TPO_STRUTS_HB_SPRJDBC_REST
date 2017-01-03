@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.dts.tpo.model.Notification_Details" table="NOTIFICATION_DETAILS">
+		<id name="notificationID" type="int">
+			<column name="NOTIFICATIONID" />
+			<generator class="increment"/>
+		</id>
+		<property name="companyID" type="int">
+			<column name="COMPANYID" />
+		</property>
+		<property name="noofvac" type="java.lang.String">
+			<column name="NOOFVAC" />
+		</property>
+		<property name="jobdesc" type="java.lang.String">
+			<column name="JOBDESC" />
+		</property>
+		<property name="category" type="java.lang.String">
+			<column name="CATEGORY" />
+		</property>
+		<property name="location" type="java.lang.String">
+			<column name="LOCATION" />
+		</property>
+		<property name="skills" type="java.lang.String">
+			<column name="SKILLS" />
+		</property>
+		<property name="createddate" type="java.sql.Date">
+			<column name="CREATEDDATE" />
+		</property>
+		<property name="expirydate" type="java.sql.Date">
+			<column name="EXPIRYDATE" />
+		</property>
+		<property name="designation" type="java.lang.String">
+			<column name="DESIGNATION" />
+		</property>
+		<property name="status" type="java.lang.String">
+			<column name="STATUS" />
+		</property>
+	</class>
+</hibernate-mapping>
