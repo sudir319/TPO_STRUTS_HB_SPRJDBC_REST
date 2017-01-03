@@ -1,5 +1,3 @@
-
-
 import static org.junit.Assert.assertTrue;
 
 import org.junit.AfterClass;
@@ -8,9 +6,7 @@ import org.junit.Test;
 
 import com.dts.core.util.DateWrapper;
 import com.dts.tpo.dao.NotificationDAO;
-import com.dts.tpo.dao.TrainingDAO;
 import com.dts.tpo.model.Notification_Details;
-import com.dts.tpo.model.Training_Details;
 
 
 public class NotificationsTest {

@@ -1,6 +1,6 @@
 package com.dts.tpo.dao;
 
-import java.sql.*;
+import java.sql.Connection;
 import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.List;
@@ -15,11 +15,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.dts.core.dao.AbstractDataAccessObject;
-import com.dts.core.util.LoggerManager;
 import com.dts.tpo.mapper.CompanyMapper;
-import com.dts.tpo.mapper.TrainingMapper;
 import com.dts.tpo.model.Company_Details;
-import com.dts.tpo.model.Training_Details;
 
 @SuppressWarnings("serial")
 public class CompanyDAO implements java.io.Serializable {

@@ -1,15 +1,12 @@
-
-
 import static org.junit.Assert.assertTrue;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import com.dts.core.util.DateWrapper;
 import com.dts.tpo.dao.TrainingDAO;
 import com.dts.tpo.model.Training_Details;
-
-import com.dts.core.util.DateWrapper;
 
 
 public class TrainingsTest {

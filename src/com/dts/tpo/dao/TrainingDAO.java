@@ -1,7 +1,6 @@
 package com.dts.tpo.dao;
 
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.List;

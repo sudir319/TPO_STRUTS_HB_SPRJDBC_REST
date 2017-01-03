@@ -1,18 +1,9 @@
-
-
 import static org.junit.Assert.assertTrue;
-
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
-
 import com.dts.tpo.dao.CompanyDAO;
-import com.dts.tpo.dao.TrainingDAO;
 import com.dts.tpo.model.Company_Details;
-import com.dts.tpo.model.Training_Details;
 
 public class CompaniesTest {
 
