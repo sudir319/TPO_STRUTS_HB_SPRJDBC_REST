@@ -12,7 +12,6 @@ import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 import org.apache.struts.actions.DispatchAction;
 
-import com.dts.core.util.DateWrapper;
 import com.dts.core.util.LoggerManager;
 import com.dts.tpo.dao.TrainingDAO;
 import com.dts.tpo.model.Training_Details;
