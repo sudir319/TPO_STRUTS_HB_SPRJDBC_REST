@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+	
+	<form-beans>
+        <form-bean name="Training_Form" type="com.dts.tpo.model.Training_Details"/>
+        <form-bean name="Company_Form" type="com.dts.tpo.model.Company_Details"/>
+        <form-bean name="Notification_Form" type="com.dts.tpo.model.Notification_Details"/>
+    </form-beans>
+	<action-mappings>
+
+		<action path="/Trainings" type="com.dts.core.struts.action.TrainingsAction" 
+			scope="request" parameter="action" validate="true" name="Training_Form">
+			<forward name="view" path="/ViewTrainings.jsp" />
+			<forward name="add_new" path="/NewTraining.jsp" />
+			<forward name="load_edit" path="/EditTraining.jsp" />
+		</action>
+
+		<action path="/Companies" type="com.dts.core.struts.action.CompaniesAction" 
+			scope="request" parameter="action" validate="true" name="Company_Form">
+			<forward name="view" path="/ViewCompanies.jsp" />
+			<forward name="add_new" path="/NewCompany.jsp" />
+			<forward name="load_edit" path="/EditCompany.jsp" />
+		</action>
+		
+		<action path="/Notifications" type="com.dts.core.struts.action.NotificationsAction" 
+			scope="request" parameter="action" validate="true" name="Notification_Form">
+			<forward name="view" path="/ViewNotification.jsp" />
+			<forward name="add_new" path="/NewNotification.jsp" />
+			<forward name="load_edit" path="/EditNotification.jsp" />
+		</action>
+
+		<action path="/Students" type="com.dts.core.struts.action.StudentsAction" 
+			scope="request" parameter="action" validate="true">
+			<forward name="view" path="/ViewStudents.jsp" />
+			<forward name="add_new" path="/NewNotification.jsp" />
+		</action>
+		
+	</action-mappings>
+</struts-config>

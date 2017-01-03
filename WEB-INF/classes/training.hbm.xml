@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.dts.tpo.model.Training_Details" table="TRAINING_DETAILS">
+		<id name="trainingId" type="int">
+			<column name="TRAININGID" />
+		</id>
+		<property name="trainingName" type="java.lang.String">
+			<column name="TRAININGNAME" />
+		</property>
+		<property name="start_date" type="java.sql.Date">
+			<column name="START_DATE" />
+		</property>
+		<property name="start_time" type="java.lang.String">
+			<column name="START_TIME" />
+		</property>
+		<property name="trainingdesc" type="java.lang.String">
+			<column name="TRAININGDESC" />
+		</property>
+		<property name="status" type="java.lang.String">
+			<column name="STATUS" />
+		</property>
+		<property name="end_date" type="java.sql.Date">
+			<column name="END_DATE" />
+		</property>
+		<property name="end_time" type="java.lang.String">
+			<column name="END_TIME" />
+		</property>
+	</class>
+</hibernate-mapping>
