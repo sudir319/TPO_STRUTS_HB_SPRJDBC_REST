@@ -134,7 +134,7 @@
 																	<td bgcolor="#FFB76F"><div align="center">
 																			<span class="style38"><a
 																				href="ViewCompany.jsp?id=<%=(aCompany.getCompanyID())%>"
-																				target="_blank"><%=(aCompany.getCompname())%>
+																				target="_blank"><%=(aCompany.getCompanyName())%>
 																			</a></span>
 																		</div></td>
 																	<td bgcolor="#FFB76F"><div align="center">

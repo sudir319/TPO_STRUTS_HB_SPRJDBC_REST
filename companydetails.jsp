@@ -11,7 +11,7 @@
 <script language="javascript">
 	function validate() {
 		var temp = document.notification;
-		if (temp.compname.value == "" || temp.profile.value == ""
+		if (temp.companyName.value == "" || temp.profile.value == ""
 				|| temp.novac.value == "" || temp.jobdesc.value == ""
 				|| temp.location.value == "" || temp.desiredskills.value == ""
 				|| temp.cdate.value == "" || temp.expdate.value == ""
@@ -136,7 +136,7 @@
 																				<td width="114" height="27" class="style36"><span
 																					class="style36">Company Name</span></td>
 																				<td width="270"><label> <select
-																						name="compname" id="select">
+																						name="companyName" id="select">
 																					</select>
 																				</label></td>
 																			</tr>

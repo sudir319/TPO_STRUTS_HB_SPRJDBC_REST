@@ -148,7 +148,7 @@
 																		</div></td>
 																	<td bgcolor="#FFB76F"><div align="center">
 																			<span class="style38"><a target="_blank"
-																				href="StudentViewNotification.jsp?id=<%=(notification.getCompanyID())%>"><%=(((Company) (aHashtable.get(new Integer((notification.getCompanyID())))))).getCompname()%>
+																				href="StudentViewNotification.jsp?id=<%=(notification.getCompanyID())%>"><%=(((Company) (aHashtable.get(new Integer((notification.getCompanyID())))))).getCompanyName()%>
 																			</a></span>
 																		</div></td>
 																	<td bgcolor="#FFB76F"><div align="center">

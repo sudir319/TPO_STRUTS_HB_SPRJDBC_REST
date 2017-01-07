@@ -12,7 +12,7 @@
 <script language="javascript">
 	function validate() {
 		var temp = document.notification;
-		if (temp.compname.value == "" || temp.profile.value == ""
+		if (temp.companyName.value == "" || temp.profile.value == ""
 				|| temp.street.value == "" || temp.city.value == ""
 				|| temp.state.value == "" || temp.country.value == ""
 				|| temp.phone.value == "" || temp.email.value == "") {

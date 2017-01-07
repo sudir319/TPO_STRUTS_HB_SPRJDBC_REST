@@ -8,7 +8,7 @@
 			<column name="COMPANYID" />
 			<generator class="increment"/>
 		</id>
-		<property name="compname" type="java.lang.String">
+		<property name="companyName" type="java.lang.String">
 			<column name="COMPANYNAME" />
 		</property>
 		<property name="profile" type="java.lang.String">

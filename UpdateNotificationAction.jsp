@@ -31,7 +31,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		    {
 		        Notification_Details aNotification = new Notification_Details();
 		        aNotification.setNotificationID(Integer.parseInt(request.getParameter("id")));
-		       	aNotification.setCompanyID(Integer.parseInt(request.getParameter("compname")));
+		       	aNotification.setCompanyID(Integer.parseInt(request.getParameter("companyName")));
 		    	aNotification.setNoofvac(request.getParameter("noofvac"));
 		    	aNotification.setJobdesc(request.getParameter("jobdesc"));
 		    	aNotification.setCategory(request.getParameter("category"));

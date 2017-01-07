@@ -13,7 +13,7 @@
 <script language="javascript">
 	function validate() {
 		var temp = document.notification;
-		if (temp.compname.value == "" || temp.noofvac.value == ""
+		if (temp.companyName.value == "" || temp.noofvac.value == ""
 				|| temp.jobdesc.value == "" || temp.location.value == ""
 				|| temp.desiredskills.value == "" || temp.cdate.value == ""
 				|| temp.expdate.value == "" || temp.desig.value == "") {

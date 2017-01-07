@@ -30,7 +30,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	     {
 	        Company aCompany = new Company();
 	        aCompany.setCompanyID(Integer.parseInt(request.getParameter("cid")));
-	        aCompany.setCompanyName(request.getParameter("compname"));
+	        aCompany.setCompanyName(request.getParameter("companyName"));
 	        aCompany.setProfile(request.getParameter("profile"));
 	        aCompany.setStreet(request.getParameter("street"));
 	        aCompany.setCity(request.getParameter("city"));

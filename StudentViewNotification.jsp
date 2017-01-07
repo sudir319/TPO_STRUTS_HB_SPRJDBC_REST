@@ -13,7 +13,7 @@
 <script language="javascript">
 	function validate() {
 		var temp = document.notification;
-		if (temp.compname.value == "" || temp.noofvac.value == ""
+		if (temp.companyName.value == "" || temp.noofvac.value == ""
 				|| temp.jobdesc.value == "" || temp.location.value == ""
 				|| temp.desiredskills.value == "" || temp.cdate.value == ""
 				|| temp.expdate.value == "" || temp.desig.value == "") {
@@ -115,7 +115,7 @@
 																				<td width="114" height="27" class="style36"><span
 																					class="style36">Company Name</span></td>
 																				<td width="270"><label> <select
-																						name="compname" id="select">
+																						name="companyName" id="select">
 																							<%
 																								try
 																								{
@@ -132,7 +132,7 @@
 																											select = "selected";
 																										}
 																							%>
-																							<option value="<%=(compid)%>" <%=select%>><%=((Company) cHashtable.get(new Integer(compid))).getCompname()%></option>
+																							<option value="<%=(compid)%>" <%=select%>><%=((Company) cHashtable.get(new Integer(compid))).getCompanyName()%></option>
 																							<%
 																								}
 																								}
