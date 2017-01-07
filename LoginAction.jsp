@@ -36,44 +36,47 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </tr>
 	--%>
 	<% 
-		//System.out.println("in loginAction");
+		System.out.println("in loginAction");
 		String target = "index.jsp?status=Invalid username and password";			
 		
-		//System.out.println("from loginAction page");
+		System.out.println("from loginAction page");
 		
 		try{
-
-			 Profile  rb=new Profile();
+			 System.out.println("Before create profile Object**********************************");
+			
 			 String username = request.getParameter("username");
-			 //System.out.println(username +" from loginaction");
+			 System.out.println(username +" from loginaction");
+			 System.out.println(request.getParameter("password")+"**** from loginaction pass");
+			 Profile  rb=new Profile();
+			 System.out.println("***************After Create profile Object ");
 	         rb.setLoginID(username);
 	         rb.setPassword(request.getParameter("password"));
-			// System.out.println(request.getParameter("password")+" from loginaction pass");
+			 
          
-         String role=new SecurityDAO().loginCheck(rb);
-         //System.out.println("after role in LoginAction");
-         
-         if(role.equals("tpo"))
-         { 
-            target = "tpohome.jsp?status=Welcome "+username;
-            session.setAttribute("user",username);
-            session.setAttribute("role",role);
-         } 
-         else if(role.equals("student"))
-         {
-            int status = new SecurityDAO().checkFirstLogin(username);
-           if(status==1)
-            	target = "studenthome.jsp?status=Welcome "+username;
-            else if(status==0)
-                target = "acadamicdetails.jsp?loginname="+username;
-            else
-                target = "LoginForm.jsp?status=Invalid username and password";    	
-            session.setAttribute("user",username);
-            session.setAttribute("role",role);
-         } 
-         else  
-            target = "LoginForm.jsp?status=Invalid username and password";
-            }catch(Exception e){} 
+	         String role=new SecurityDAO().loginCheck(rb);
+	         //System.out.println("after role in LoginAction");
+	         
+	         if(role.equals("tpo"))
+	         { 
+	            target = "tpohome.jsp?status=Welcome "+username;
+	            session.setAttribute("user",username);
+	            session.setAttribute("role",role);
+	         } 
+	         else if(role.equals("student"))
+	         {
+	            int status = new SecurityDAO().checkFirstLogin(username);
+	           if(status==1)
+	            	target = "studenthome.jsp?status=Welcome "+username;
+	            else if(status==0)
+	                target = "acadamicdetails.jsp?loginname="+username;
+	            else
+	                target = "LoginForm.jsp?status=Invalid username and password";    	
+	            session.setAttribute("user",username);
+	            session.setAttribute("role",role);
+	         } 
+	         else  
+	            target = "LoginForm.jsp?status=Invalid username and password";
+            }catch(Throwable t){t.printStackTrace();} 
         RequestDispatcher rd = request.getRequestDispatcher(target);
         rd.forward(request,response);    
     %>

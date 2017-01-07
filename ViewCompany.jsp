@@ -12,7 +12,7 @@
 <script language="javascript">
 	function validate() {
 		var temp = document.notification;
-		if (temp.compname.value == "" || temp.profile.value == ""
+		if (temp.companyName.value == "" || temp.profile.value == ""
 				|| temp.street.value == "" || temp.city.value == ""
 				|| temp.state.value == "" || temp.country.value == ""
 				|| temp.phone.value == "" || temp.email.value == "") {
@@ -113,8 +113,8 @@
 																				<td width="114" height="27" class="style36"><span
 																					class="style36">Company Name</span></td>
 																				<td width="270"><label> <input
-																						type="text" name="compname" id="textfield"
-																						value="<%=aCompany.getCompname()%>">
+																						type="text" name="companyName" id="textfield"
+																						value="<%=aCompany.getCompanyName()%>">
 																				</label></td>
 																			</tr>
 																			<tr>

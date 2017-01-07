@@ -388,7 +388,7 @@
  				compid = ((Integer) enu.nextElement()).intValue();
  				if (compid == aNotification.getCompanyID())
  				{
- %> <%=((Company) cHashtable.get(new Integer(compid))).getCompname()%>
+ %> <%=((Company) cHashtable.get(new Integer(compid))).getcompanyName()%>
 																								<%
 																									}
 																											}

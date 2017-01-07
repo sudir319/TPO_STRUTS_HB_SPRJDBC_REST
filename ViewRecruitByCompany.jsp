@@ -118,7 +118,7 @@
 																																					while (enu.hasMoreElements())
 																																					{
 																																						company = (Company) enu.nextElement();
-																		%><option value="<%=(company.getCompanyID())%>"><%=(company.getCompname())%></option>
+																		%><option value="<%=(company.getCompanyID())%>"><%=(company.getCompanyName())%></option>
 																		<%
 																			}
 																																				}

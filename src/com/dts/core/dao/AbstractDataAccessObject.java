@@ -7,7 +7,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
 import com.dts.core.util.LoggerManager;
 
@@ -17,6 +19,7 @@ import com.dts.core.util.LoggerManager;
  * @author PRANEETH
  *
  */
+@Repository("edao")
 public class AbstractDataAccessObject implements java.io.Serializable
 {
 	/**
@@ -34,6 +37,7 @@ public class AbstractDataAccessObject implements java.io.Serializable
 	
 	private boolean hibernateEnabled;
 	
+	@Autowired
 	private JdbcTemplate jdbcTemplate;
 
 	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {

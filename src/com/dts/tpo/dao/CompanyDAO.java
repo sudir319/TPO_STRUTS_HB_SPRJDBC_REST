@@ -181,7 +181,7 @@ public class CompanyDAO implements java.io.Serializable {
 //				System.out.println("Company Id   : "
 //						+ company_Details.getCompanyId());
 //				System.out.println("Company Name : "
-//						+ company_Details.getCompname());
+//						+ company_Details.getCompanyName());
 //				System.out.println("profile      : "
 //						+ company_Details.getProfile());
 //				System.out.println("street       : "
@@ -221,7 +221,7 @@ public class CompanyDAO implements java.io.Serializable {
 					Company_Details company = (Company_Details) iterator.next();
 	//				System.out.println("Company Id   : " + company.getCompanyId());
 	//				System.out
-	//						.println("Company Name : " + company.getCompname());
+	//						.println("Company Name : " + company.getCompanyName());
 	//				System.out.println("Profile      : " + company.getProfile());
 	//				System.out.println("Street       : " + company.getStreet());
 	//				System.out.println("City         : " + company.getCity());

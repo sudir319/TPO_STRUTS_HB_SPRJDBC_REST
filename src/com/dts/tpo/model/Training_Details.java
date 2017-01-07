@@ -17,6 +17,8 @@ public class Training_Details extends org.apache.struts.action.ActionForm
 	private String trainingdesc;
 	private String status;
 
+		
+	public Training_Details(){}
 	public int getTrainingId() {
 		return trainingId;
 	}

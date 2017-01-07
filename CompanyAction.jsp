@@ -29,8 +29,8 @@
 		try
 		{
 			Company_Details aCompany = new Company_Details();
-			aCompany.setCompname(request.getParameter("compname"));
-			System.out.println("Company name "+request.getParameter("compname"));
+			aCompany.setCompanyName(request.getParameter("companyName"));
+			System.out.println("Company name "+request.getParameter("companyName"));
 			aCompany.setProfile(request.getParameter("profile"));
 			aCompany.setStreet(request.getParameter("street"));
 			aCompany.setCity(request.getParameter("city"));
