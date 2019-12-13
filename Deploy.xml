@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="TPO" default="deployment" basedir=".">
-	<property name="tomcat_path" value="C:\apache-tomcat-7.0.55" />
-	<property name="tomcat_path2" value="C:\apache-tomcat-8.0.0-RC5" />
+	<property name="tomcat_path" value="E:\Sudheer\Softs\apache-tomcat-7.0.19" />
 	<target name="deployment" description="Deploy Project into Tomcat">
-		<copy todir="${tomcat_path}\webapps\TPO_Struts_Hb" verbose="true">
-			<fileset dir="." excludes="src/,bin/" />
+		<copy todir="${tomcat_path}\webapps\TPO_Struts_Hb" verbose="false">
+			<fileset dir="." excludes="src/,bin/,WEB-INF/lib/servlet-api.jar" />
 		</copy>
 		<copy todir="${tomcat_path}\webapps\TPO_Struts_Hb\WEB-INF\classes" verbose="true">
 			<fileset dir="bin" />
